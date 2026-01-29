@@ -22,8 +22,12 @@ header {
     align-items: center;
     margin: 0 auto;
     padding-top: 1.2rem;
-    
+    position: relative;
+    z-index: 10;
 }
+
+
+
 
 .nav-logo a {
      display: flex;
@@ -46,7 +50,6 @@ header {
  display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .nav-links li {
@@ -92,6 +95,22 @@ background-color: #fff;
 }
 
 
+
+
+/* hide checkbox */
+
+#nav-toggle {
+  display: none;
+}
+
+/* hide hamburger icon on desktop */
+
+ .menu-icon {
+  display: none;
+} 
+
+
+
 /* HERO SECTION */
 
 
@@ -100,7 +119,6 @@ background-color: #fff;
 }
 
 .hero-content {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -129,8 +147,6 @@ background-color: #fff;
 
 .hero-img {
     width: 40%;
-    
-    /* border: 1px solid black; */
 }
 
 .hero-img img {
@@ -229,8 +245,9 @@ margin-top: 1.4rem;
 .menu-grid { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 1.3rem;
+    padding: 0 1.8rem;
 }
 
 .menu-card {
@@ -363,6 +380,7 @@ box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.2);
 /* FOOTER */
 
 .footer-content {
+    width: 100%;
     background-color: #faedcd;
     display: flex;
     flex-direction: column;
